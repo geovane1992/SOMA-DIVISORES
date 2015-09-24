@@ -4,6 +4,10 @@ public class SomaDivisores {
     
     public static double somaDivisores(double n){
         
+        if (n <= 0) {
+            throw new IllegalArgumentException("Informe um valor válido para n!");
+        }
+        
        double d = 2;
        double s = 1;
        
